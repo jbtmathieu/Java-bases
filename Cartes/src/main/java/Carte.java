@@ -1,4 +1,4 @@
-public class Carte {
+/*public class Carte {
     String color;
     short value;
 
@@ -24,5 +24,25 @@ public class Carte {
 
     public void setValue(short value) {
         this.value = value;
+    }
+}
+*/
+
+
+public class Carte {
+    private int _valeur;
+    private String _couleur;
+
+    public Carte(int valeur, String couleur) {
+        _valeur = valeur;
+        _couleur = couleur;
+    }
+
+    public int getValeur() {
+        return _valeur;
+    }
+
+    public String getCouleur() {
+        return _couleur;
     }
 }

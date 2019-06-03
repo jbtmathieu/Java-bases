@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class CardSet {
-    private String set[][];
+    private String set[];
     private String valueSet[];
     private String colorSet[];
 
@@ -26,13 +26,13 @@ public class CardSet {
         colorSet= new String[] {"Spade", "Heart", "Diamond", "Club"};
 
         // Initialisation du jeu de cartes
-        set= new String[13][4];
+        //set= new String[13][4];
         for(i=0;i<4;i++){
             System.out.println("i:"+i);
             for (j=0;j<13;j++){
-                set[j][i]= valueSet[j];
+                set[j]= colorSet[i]+ valueSet[j];
                 System.out.println("j:"+j);
-                System.out.println(set[j][i]);
+                System.out.println(colorSet[i]+ valueSet[j]);
                 }
             }
     }
