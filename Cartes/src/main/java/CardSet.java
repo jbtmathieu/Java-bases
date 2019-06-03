@@ -9,12 +9,12 @@ public class CardSet {
     public CardSet() {
         String valueSet[]= new String[13];
         String number;
-        int i=2;
+        int i=1;
         int j=0;
 
         //initialisation des faces des cartes
         do{
-            valueSet[i]= String.valueOf(i);
+            valueSet[i]= String.valueOf(i+1);
             i++;
         } while (i<=10);
         valueSet[10]="Jack";
