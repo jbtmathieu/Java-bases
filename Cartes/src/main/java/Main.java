@@ -1,6 +1,7 @@
 public class Main {
 
     public static void main (String[]args){
+        //Exercice 4
         Carte card1 = new Carte("Spade",(short)8);
         Carte card2 = new Carte("Club",(short)6);
         Carte card3 = new Carte("Heart",(short)5);
@@ -19,6 +20,10 @@ public class Main {
         System.out.println(card3.getColor()+" "+card3.getValue());
 
 
+
+        //Exercice 5 jeu 52 + mélange
+        CardSet mySet;
+        mySet = new CardSet();
 
 
     }
