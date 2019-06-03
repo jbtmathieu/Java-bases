@@ -3,8 +3,6 @@ public class Carte {
     short value;
 
     // construct
-
-
     public Carte(String color, short value) {
         this.color = color;
         this.value = value;
