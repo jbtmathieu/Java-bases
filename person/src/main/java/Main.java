@@ -11,7 +11,6 @@ public class Main {
             System.out.println(p1.getName());
 
             p1.comparer(p2);
-
         }
 
 
