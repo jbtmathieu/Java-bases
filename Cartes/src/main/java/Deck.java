@@ -2,9 +2,24 @@ import java.util.Random;
 
 public class Deck {
     private Carte[] cartes;
+    private int length;
 
     public Deck() {
         cartes = new Carte[52];
+        int curseur = 0;
+        length=52;
+        String[] colors = { "Heart", "Diamond", "Spade", "Club" };
+        for (int i = 0; i < colors.length; i++) {
+            for (int j = 1; j <= 13; j++) {
+                cartes[curseur] = new Carte(j, colors[i]);
+                curseur++;
+            }
+        }
+    }
+
+    public Deck(int lengthParam) {
+        cartes = new Carte[lengthParam];
+        length= lengthParam;
         int curseur = 0;
         String[] colors = { "Heart", "Diamond", "Spade", "Club" };
         for (int i = 0; i < colors.length; i++) {
@@ -42,9 +57,9 @@ public class Deck {
         cartes = cartesMelangees;
     }
 
-    public Deck diviser() {
-        Carte[] newCartes1 = new Carte[cartes.length / 2];
-        Carte[] newCartes2 = new Carte[cartes.length / 2 + cartes.length % 2];
+    public Deck diviser(Carte[] newCartes1, Carte[] newCartes2) {
+        newCartes1 = new Carte[cartes.length / 2];
+        newCartes2 = new Carte[cartes.length / 2 + cartes.length % 2];
 
         for (int i = 0; i < cartes.length / 2; i++) {
             newCartes1[i] = cartes[i];
@@ -56,4 +71,23 @@ public class Deck {
         cartes = newCartes1;
         return new Deck(newCartes2);
     }
+
+
+
+    public Carte[] getCartes() {
+        return cartes;
+    }
+
+    public Carte getCarte(int index) {
+        return cartes[index];
+    }
+
+    public void setCartes(Carte[] cartes) {
+        this.cartes = cartes;
+    }
+
+    public int getLength() {
+        return this.length;
+    }
 }
+

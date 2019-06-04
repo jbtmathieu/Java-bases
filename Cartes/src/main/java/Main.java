@@ -24,13 +24,27 @@ public class Main {
 
         //Exercice 5 jeu 52 + mélange
         Deck d = new Deck();
+        System.out.println("Afficher :");
         d.afficher();
+        System.out.println("Mélanger.");
         d.melanger();
-        d.afficher();
-        Deck d2 = d.diviser();
-        d.afficher();
-        d2.afficher();
 
+        System.out.println("Afficher :");
+        d.afficher();
+
+
+        //Carte[] newCartes1 = new Carte[1];
+        //Carte[] newCartes2 = new Carte[1];
+
+        //Deck d2 = d.diviser(newCartes1, newCartes2);
+       // d.afficher();
+        //d2.afficher();
+
+        //d.Bataille(newCartes1, newCartes2);
+
+        Bataille bataille = new Bataille(d);
+
+        bataille.run();
 
 
 
