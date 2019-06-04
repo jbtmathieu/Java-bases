@@ -1,14 +1,47 @@
-public class Movie {
+public class Movie extends Document{
     //members
+    static float cost;
+
     private VidSupport support;
-    private int cost;
 
     //const
-    public Movie(VidSupport support, int cost) {
+    public Movie(String title, String author, boolean forRenting, VidSupport support) {
+        super(title, author, forRenting);
         this.support = support;
-        this.cost = cost;
+        this.cost=70f;
     }
 
+
+    //set get
+    @Override
+    public String getTitle() {
+        return super.getTitle();
+    }
+
+    @Override
+    public void setTitle(String title) {
+        super.setTitle(title);
+    }
+
+    @Override
+    public String getAuthor() {
+        return super.getAuthor();
+    }
+
+    @Override
+    public void setAuthor(String author) {
+        super.setAuthor(author);
+    }
+
+    @Override
+    public boolean isForRenting() {
+        return super.isForRenting();
+    }
+
+    @Override
+    public void setForRenting(boolean forRenting) {
+        super.setForRenting(forRenting);
+    }
     //set get
 
 
@@ -20,12 +53,16 @@ public class Movie {
         this.support = support;
     }
 
-    public int getCost() {
+    public float getCost() {
         return cost;
     }
 
-    public void setCost(int cost) {
+    public boolean setCost(float cost) {
+        if (cost>0){
         this.cost = cost;
+        return true;
+        }
+        return false;
     }
 
     // other

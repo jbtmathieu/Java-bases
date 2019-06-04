@@ -1,15 +1,18 @@
-public class Book {
+public class Book extends Document{
     //members
-    private int pageNbr;
-    private boolean forRenting;
+    protected int pageNbr;
+    protected boolean forRenting;
 
     //const
 
-    public Book(int pageNbr, boolean forRenting) {
+    public Book(String title, String author, boolean forRenting, int pageNbr) {
+        super(title, author, forRenting);
         this.pageNbr = pageNbr;
-        this.forRenting = forRenting;
 
+        float fl=0;
+        boolean  cond = setCost(fl);
     }
+
 
     //set get
 
@@ -28,6 +31,13 @@ public class Book {
     public void setForRenting(boolean forRenting) {
         this.forRenting = forRenting;
     }
+//
+    public boolean setCost(float cost){
+        if (pageNbr > 0) {
+            this.cost = pageNbr * 0.5f;
+            return true;
+        }else return false;
+    }
 
     //other
 
@@ -40,4 +50,4 @@ public class Book {
                 '}';
     }
 }
-}
+

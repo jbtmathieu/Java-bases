@@ -3,19 +3,18 @@ public abstract class Document {
     protected String title;
     protected String  author;
     protected boolean forRenting;
-    protected int cost;
+    protected float cost;
 
     //constr
     public Document(String title, String author, boolean forRenting) {
         this.title = title;
         this.author = author;
         this.forRenting = forRenting;
+        this.cost = 0;
 
     }
 
-
     //set get
-
     public String getTitle() {
         return title;
     }
@@ -40,16 +39,17 @@ public abstract class Document {
         this.forRenting = forRenting;
     }
 
-    public int getCost() {
+    public float getCost() {
         return cost;
     }
 
-    public void setCost(int cost) {
-        this.cost = cost;
-    }
+    public abstract boolean setCost(float cost);
+        //ABSTRACT
+
 
 
     //other
+
 
     @Override
     public String toString() {

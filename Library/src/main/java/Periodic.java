@@ -1,35 +1,40 @@
-public class Periodic {
+public class Periodic extends Book{
     //members
-    private int pageNbr;
-    private int cost;
 
     //const
+    public Periodic(String title, String author, boolean forRenting, int pageNbr) {
+        super(title, author, forRenting, pageNbr);
+    }
+
 
     //set get
-
+    @Override
     public int getPageNbr() {
-        return pageNbr;
+        return super.getPageNbr();
     }
 
+    @Override
     public void setPageNbr(int pageNbr) {
-        this.pageNbr = pageNbr;
+        super.setPageNbr(pageNbr);
     }
 
-    public int getCost() {
-        return cost;
+    @Override
+    public boolean isForRenting() {
+        return super.isForRenting();
     }
 
-    public void setCost(int cost) {
-        this.cost = cost;
+    @Override
+    public void setForRenting(boolean forRenting) {
+        super.setForRenting(forRenting);
     }
-
-    //other
 
     @Override
     public String toString() {
-        return super.toString()+" Periodic{" +
-                "pageNbr=" + pageNbr +
-                ", cost=" + cost +
-                '}';
+        return super.toString();
     }
+    //other
+
+
+
+
 }
