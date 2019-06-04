@@ -80,6 +80,8 @@ public class Truck extends BigVehicle{
         if (super.volume>=volume) return true;
         else return false;
 
+        //return this.volume >= volume;
+
     }
 
 }

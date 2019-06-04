@@ -52,6 +52,9 @@ public class Vehicle {
     }
 
     //other
+    // codage 3.
+
+
     // Codage 4.
     final public void viewF(){
         System.out.print("Model : "+model+" ");
@@ -71,8 +74,10 @@ public class Vehicle {
 
     //codage 6.
     public float RentingCost(String currentYear){
-        float rentalDayCost =((Integer.parseInt(currentYear)-Integer.parseInt(this.year))<=1) ? this.price/250 : this.price/200;
+        float rentalDayCost =((Integer.parseInt(currentYear)-Integer.parseInt(this.year))<=1) ? this.price/200 : this.price/250;
         return rentalDayCost;
+
+        //age()<1
     }
 
 }
