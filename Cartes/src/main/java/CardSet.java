@@ -1,13 +1,14 @@
 import java.util.Random;
 
 public class CardSet {
+    private Carte carte[];
     private String set[];
     private String valueSet[];
     private String colorSet[];
 
 
-    public CardSet() {
-        String valueSet[]= new String[13];
+    public CardSet(int numb) {
+        String valueSet[]= new String[numb/4];
         String number;
         int i=1;
         int j=0;
@@ -35,6 +36,7 @@ public class CardSet {
                 System.out.println(colorSet[i]+ valueSet[j]);
                 }
             }
+
     }
 
     public static boolean CardSetShuffle(){
