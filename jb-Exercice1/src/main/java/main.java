@@ -50,10 +50,24 @@ public class main {
         //pp 1.
         Car twingo= new Car("Twingo", "2019",10000, "1234 AZ 49", 'B', true);
         twingo.view();
+        //pp 2.
         Truck J9= new Truck("J9",Integer.toString(2019-5),20000, "987 BCD 75", 'B', 25.0f);
         J9.view();
         cond=J9.canCarry(7.0f);
-        System.out.println("Can carry 7m²?"+cond);
+        System.out.println("Can carry 7m²? "+cond);
+
+        //pp 3.
+        aFloat = twingo.RentingCost("2003");
+        System.out.println("Coût journalier d'une "+twingo.getModel()+" : "+aFloat);
+        aFloat = J9.RentingCost("2004");
+        System.out.println("Coût journalier d'une "+J9.getModel()+" : "+aFloat);
+
+        //pp 4.
+        Bus FRI = new Bus("FRI", "2005", 90000, "4567WX01", 'D', 3, 53);
+        FRI.view();
+        cond=FRI.canCarry((float) (0.1*40),40);
+        System.out.println("Can carry 40 passengers with 4m² of luggages? "+cond);
+
 
     }
 }
