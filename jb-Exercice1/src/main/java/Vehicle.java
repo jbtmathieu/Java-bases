@@ -2,6 +2,8 @@ import java.io.PrintStream;
 
 public class Vehicle {
     //members
+
+    final int currentYear=2019;
     protected String model;
     protected String year;
     protected float price;
@@ -53,7 +55,9 @@ public class Vehicle {
 
     //other
     // codage 3.
-
+public int age(){
+        return currentYear-Integer.parseInt(this.year);
+    }
 
     // Codage 4.
     final public void viewF(){
@@ -77,7 +81,9 @@ public class Vehicle {
         float rentalDayCost =((Integer.parseInt(currentYear)-Integer.parseInt(this.year))<=1) ? this.price/200 : this.price/250;
         return rentalDayCost;
 
-        //age()<1
+        /* if age()<1
+                return false;
+        return .volume */
     }
 
 }
