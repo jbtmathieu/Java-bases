@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 //3.
-public class Library {
+public final class Library { //final car une seule
     //members
     protected Document[] documents;
     protected int index;
@@ -45,8 +45,24 @@ public class Library {
     }
 public int getNumberOfMovies(){
         int Nbr=0;
-        for (int i=0;i<index;i++) {
-            if (documents[i].getClass().getName() == "Movie") Nbr++;
+        for (int i=0;i<index;i++) if (documents[i].getClass().getName() == "Movie") Nbr++;
+        return Nbr;
+    }
+
+    public int getNumberOfDocuments(){
+        int Nbr=0;
+        for (int i=0;i<documents.length;i++) {
+            if (documents[i] != null) Nbr++;
+        }
+        return Nbr;
+    }
+
+    public int getNbDVD() {
+        int Nbr=0;
+        for (int i=0;i<documents.length;i++) {
+            if (documents[i] != null && documents[i] instanceof Movie) {
+                if(((Movie) documents[i]).getSupport().equals("DVD")) Nbr++;
+            }
         }
         return Nbr;
     }

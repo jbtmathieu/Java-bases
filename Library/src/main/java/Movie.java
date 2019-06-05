@@ -5,8 +5,8 @@ public class Movie extends Document{
     private VidSupport support;
 
     //const
-    public Movie(String title, String author, boolean forRenting, VidSupport support) {
-        super(title, author, forRenting);
+    public Movie(String title, String author, VidSupport support) {
+        super(title, author, true);
         this.support = support;
         this.cost=70f;
     }
@@ -45,8 +45,8 @@ public class Movie extends Document{
     //set get
 
 
-    public VidSupport getSupport() {
-        return support;
+    public String getSupport() {
+        return "DVD";
     }
 
     public void setSupport(VidSupport support) {

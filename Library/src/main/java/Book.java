@@ -9,8 +9,7 @@ public class Book extends Document{
         super(title, author, forRenting);
         this.pageNbr = pageNbr;
 
-        float fl=0;
-        boolean  cond = setCost(fl);
+        boolean  cond = setCost();
     }
 
 
@@ -33,6 +32,12 @@ public class Book extends Document{
     }
 //
     public boolean setCost(float cost){
+        if (pageNbr > 0) {
+            this.cost = pageNbr * cost;
+            return true;
+        }else return false;
+    }
+    public boolean setCost(){
         if (pageNbr > 0) {
             this.cost = pageNbr * 0.5f;
             return true;
