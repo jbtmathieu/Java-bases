@@ -26,14 +26,13 @@ public class Queen extends Piece{
 
     @Override
     public boolean positionPossible(Coordinate position) {
-        if ((((position.getAbscissa()- super.getCoordinate().getAbscissa()) == -1)
-                || ((position.getAbscissa()- super.getCoordinate().getAbscissa()) == 0)
-                || ((position.getAbscissa()- super.getCoordinate().getAbscissa()) == 1))
-                && ((position.getOrdinate()- super.getCoordinate().getOrdinate() == -1)
-                || (position.getOrdinate()- super.getCoordinate().getOrdinate()) == 0)
-                || (position.getOrdinate()- super.getCoordinate().getOrdinate()) == 1 ) {
-            return true;
-        } else return false;
+        if (super.coordinate != position) {
+            if ((((position.getAbscissa() - super.getCoordinate().getAbscissa()) == 0) || (position.getOrdinate() - super.getCoordinate().getOrdinate()) == 0)
+                    || (position.getOrdinate() - super.getCoordinate().getOrdinate()) == 1) {
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override

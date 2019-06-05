@@ -1,2 +1,3 @@
-public enum VidSupport {DVD, BluRay, BluRay3D;
+public enum VidSupport {
+    DVD, BluRay, BluRay3D;
 }

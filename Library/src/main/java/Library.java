@@ -32,7 +32,7 @@ public final class Library { //final car une seule
         if (index >= documents.length-1) {
             Document[] documents2 = new Document[index+100];
             documents2[documents2.length-100]= document;
-            for (int i=0;i<documents.length;i++) {
+            for (int i=0;i<documents.length-1;i++) {
                 documents2[i] = documents[i];
                 System.out.println(i+" "+documents[i].title);
             }
@@ -45,7 +45,14 @@ public final class Library { //final car une seule
     }
 public int getNumberOfMovies(){
         int Nbr=0;
-        for (int i=0;i<index;i++) if (documents[i].getClass().getName() == "Movie") Nbr++;
+        for (int i=0;i<index-1;i++){
+            System.out.println(i);
+            if (documents[i] !=null && (documents[i].getClass().getName() == "Movie")) {
+                System.out.println(documents[i]);
+                Nbr++;
+            }
+
+        }
         return Nbr;
     }
 

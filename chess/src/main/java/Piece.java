@@ -37,6 +37,7 @@ public abstract class Piece {
     }
 
     public void setCoordinate(String string) {
+
         if (string.indexOf(";") != 0 && string.length()>=3) {
             this.coordinate.setAbscissa(Integer.valueOf(string.substring(0, string.indexOf(";"))));
             this.coordinate.setOrdinate(Integer.valueOf(string.substring(string.indexOf(";") + 1, string.length())));
@@ -50,7 +51,7 @@ public abstract class Piece {
     public abstract boolean positionPossible(Coordinate position);
 
     public void deplacement(Coordinate position){
-        setCoordinate(position);
+        if(this.positionPossible(position)) setCoordinate(position);
     }
 
     @Override

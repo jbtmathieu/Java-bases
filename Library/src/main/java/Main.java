@@ -18,15 +18,19 @@ public class Main {
         Library library= new Library(documents);
         System.out.println(library.toString());
         library.addDocument(movie);
-        //library.addDocument(book);
-        //library.addDocument(periodic);
+
+        library.addDocument(movie);
+        library.addDocument(book);
+        library.addDocument(periodic);
         System.out.println(library.toString());
         //6.
         System.out.println(library.getNumberOfMovies());
 
         System.out.println(library.getNumberOfDocuments());
 
+
         System.out.println(library.getNbDVD());
+        System.out.println(movie.getSupport());
 
 
     }

@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="684733fb-ef30-408f-b8f9-cdcf259eda3f" name="Default Changelist" comment="" />
+    <list default="true" id="684733fb-ef30-408f-b8f9-cdcf259eda3f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../chess/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chess/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chess/src/main/java/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chess/src/main/java/King.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chess/src/main/java/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chess/src/main/java/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chess/src/main/java/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chess/src/main/java/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chess/target/classes/King.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chess/target/classes/King.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chess/target/classes/Piece.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chess/target/classes/Piece.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chess/target/classes/Queen.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chess/target/classes/Queen.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="187">
+              <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -187,6 +195,9 @@
       </pane>
     </panes>
   </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -236,6 +247,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -361,8 +373,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="187">
+          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
         </state>
       </provider>
     </entry>
