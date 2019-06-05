@@ -1,11 +1,11 @@
-public class Queen extends Piece{
+public class Bishop extends Piece{
     //members
 
     //constr
 
-    public Queen(boolean color, Coordinate coordinate) {
+    public Bishop(boolean color, Coordinate coordinate) {
         super(color, coordinate);
-        super.setSymbol('Q');
+        super.setSymbol('F');
     }
 
     //set get
@@ -27,12 +27,8 @@ public class Queen extends Piece{
     @Override
     public boolean positionPossible(Coordinate position) {
         if (super.coordinate != position) {
-            if ((((position.getAbscissa() - super.getCoordinate().getAbscissa()) == 0) || (position.getOrdinate() - super.getCoordinate().getOrdinate()) == 0)){
+            if ((position.getAbscissa() - super.getCoordinate().getAbscissa()) == position.getOrdinate() - super.getCoordinate().getOrdinate()){
                 return true;
-            } else {
-                if ((position.getAbscissa() - super.getCoordinate().getAbscissa()) == position.getOrdinate() - super.getCoordinate().getOrdinate()){
-                    return true;
-                }
             }
         }
         return false;

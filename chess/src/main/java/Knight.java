@@ -1,11 +1,11 @@
-public class Queen extends Piece{
+public class Knight extends Piece{
     //members
 
     //constr
 
-    public Queen(boolean color, Coordinate coordinate) {
+    public Knight(boolean color, Coordinate coordinate) {
         super(color, coordinate);
-        super.setSymbol('Q');
+        super.setSymbol('C');
     }
 
     //set get
