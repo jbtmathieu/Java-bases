@@ -46,7 +46,7 @@ public class Library {
 public int getNumberOfMovies(){
         int Nbr=0;
         for (int i=0;i<index;i++) {
-            if (documents[i].getClass().getName()== "Movie") Nbr++;
+            if (documents[i].getClass().getName() == "Movie") Nbr++;
         }
         return Nbr;
     }
