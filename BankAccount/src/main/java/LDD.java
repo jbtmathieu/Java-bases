@@ -3,7 +3,7 @@ public class LDD extends BankAccount {
 protected float interestRate=1.0f;
     //constr
 
-    public LDD(EnumOwner owner) {
+    public LDD(Owner owner) {
         super(owner);
         amount= 15.0f;
         overdraft = -15.0f;
@@ -20,8 +20,9 @@ protected float interestRate=1.0f;
     }
 
 
-    public void interestPayment(){
-        this.amount = amount*interestRate +amount;
+    public final void interestPayment(){
+
+        this.amount = amount*interestRate/100 +amount;
     }
 
 }

@@ -1,9 +1,9 @@
 import java.util.Random;
 
-public class BankAccount {
+public abstract class BankAccount {
     //members
-    protected EnumOwner owner;
-    protected static int bankAccountNumber;
+    protected Owner owner;
+    protected int bankAccountNumber;
     protected float amount=0;
     protected float overdraft=0;
     protected float ceiling=100000f;
@@ -11,30 +11,31 @@ public class BankAccount {
     protected static float transferCommission = 1.0f;
     //constr
 
-    public BankAccount(EnumOwner owner) {
+    public BankAccount(Owner owner) {
         this.owner = owner;
         Random random= new Random();
-        bankAccountNumber = (random.nextInt());
+        bankAccountNumber = Math.abs(random.nextInt());
 
     }
 
 
     //set get
 
-    public EnumOwner getOwner() {
+    public Owner getOwner() {
+
         return owner;
     }
 
-    public void setOwner(EnumOwner owner) {
+    public void setOwner(Owner owner) {
         this.owner = owner;
     }
 
-    public static int getBankAccountNumber() {
+    public  int getBankAccountNumber() {
         return bankAccountNumber;
     }
 
-    public static void setBankAccountNumber(int bankAccountNumber) {
-        BankAccount.bankAccountNumber = bankAccountNumber;
+    public void setBankAccountNumber(int bankAccountNumber) {
+        this.bankAccountNumber = bankAccountNumber;
     }
 
     public float getAmount() {
@@ -96,5 +97,17 @@ public class BankAccount {
         //
     }
 
+    //other
 
+
+    @Override
+
+    public String toString() {
+        return "BankAccount "+bankAccountNumber+"{" +
+                "owner=" + owner +
+                ", amount=" + amount +
+                ", overdraft=" + overdraft +
+                ", ceiling=" + ceiling +
+                '}';
+    }
 }

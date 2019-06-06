@@ -5,7 +5,7 @@ public class LEP extends LDD{
 
     public LEP(Person person) {
         //if (owner.getType().equals(Person)) {
-            super(person.getType());
+            super(person);
             super.setAmount(30.0f);
             super.setOverdraft(-30f);
             super.setCeiling(7700);
@@ -13,4 +13,10 @@ public class LEP extends LDD{
 
     }
 
+
+    //set get
+
+
+
+    //other
 }

@@ -3,7 +3,7 @@ public class Person extends Owner{
     protected String birthDate;
 
 
-    public Person(String name, EnumOwner type, String address) {
-        super(name, type, address);
+    public Person(String name, String address) {
+        super(name, EnumOwner.Person, address);
     }
 }
