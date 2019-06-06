@@ -36,6 +36,7 @@ public abstract class Owner {
         this.address = address;
     }
 
+
     //other
 
 

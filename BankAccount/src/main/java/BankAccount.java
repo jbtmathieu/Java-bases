@@ -3,8 +3,11 @@ import java.util.Random;
 public abstract class BankAccount {
     //members
     protected Owner owner;
+
     protected int bankAccountNumber;
+
     protected float amount=0;
+
     protected float overdraft=0;
     protected float ceiling=100000f;
 

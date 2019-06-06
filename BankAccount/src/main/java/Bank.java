@@ -71,6 +71,9 @@ public class Bank {
     // 5.
     public void applyInterest(){
         for ( int i = 0; i < comptes . size () ; i++) {
+          /*  for(Comptes:this.comptes){
+                //compte.appliquerInterets();
+            } */
             if (comptes.get(i) != null && comptes.get(i) instanceof LDD) {
                 ((LDD) comptes.get(i)).interestPayment();
             }

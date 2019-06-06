@@ -1,4 +1,4 @@
-public class Person extends Owner{
+public final class Person extends Owner{
     //members
     protected String birthDate;
 

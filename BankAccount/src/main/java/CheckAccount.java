@@ -1,4 +1,4 @@
-public class CheckAccount extends BankAccount {
+public final class CheckAccount extends BankAccount {
     //members
 
     //const
